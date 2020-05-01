@@ -2,20 +2,22 @@
 
 {{#if todos.length}}
 <ul>
-  {{#each todos}}
+  {{#each todos as | todo |}}
     <li class="todo">
       <label>
+        {{#with todo}}
         {{#if completed}}
           <input type="checkbox" checked>
-          <span class="completed">{{ title }}</span>
+          <span class="completed">{{title}}</span>
 
           <button class="btn btn-small">Save</button>
         {{else}}
           <input type="checkbox">
-          <span>{{ title }}</span>
+          <span>{{title}}</span>
 
           <button class="btn btn-small">Save</button>
-        {{/if}}        
+        {{/if}}  
+        {{/with}}      
       </label>
     </li>
   {{/each}}
