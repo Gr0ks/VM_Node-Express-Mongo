@@ -1,0 +1,27 @@
+{
+  "name": "vm_node-express-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gr0ks/VM_Node-Express-Mongo.git"
+  },
+  "author": "Ilya Petrenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gr0ks/VM_Node-Express-Mongo/issues"
+  },
+  "homepage": "https://github.com/Gr0ks/VM_Node-Express-Mongo#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
